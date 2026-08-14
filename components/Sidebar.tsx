@@ -34,8 +34,10 @@ function Sidebar() {
             <path d="M4 20c0-4 3.5-6 8-6s8 2 8 6" fill="#2b2f45" />
           </svg>
         </div>
-        <div className="profile-name">Aman Admin</div>
-        <div className="profile-role">Admin</div>
+        <div className="profile-text">
+          <div className="profile-name">Aman Admin</div>
+          <div className="profile-role">Admin</div>
+        </div>
       </div>
 
       <div className="sidebar-section">
