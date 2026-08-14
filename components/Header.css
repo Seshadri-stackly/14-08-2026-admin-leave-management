@@ -3,6 +3,15 @@
   align-items: center;
   gap: 18px;
   padding: 24px 0 20px;
+  position: relative;
+}
+
+.header-search-group {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .hamburger {
