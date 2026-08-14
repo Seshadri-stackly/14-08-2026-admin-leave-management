@@ -244,6 +244,14 @@
   border-bottom: 1px solid #f3f4f9;
 }
 
+.leave-table tbody tr:nth-child(odd) {
+  background: #eaf0fb;
+}
+
+.leave-table tbody tr:nth-child(even) {
+  background: white;
+}
+
 .action-btn, .export-btn {
   display: inline-flex;
   align-items: center;
