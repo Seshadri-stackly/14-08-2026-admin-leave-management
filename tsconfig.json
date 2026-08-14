@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "jsx": "react",
+    "lib": ["ES2020", "DOM"],
+    "allowJs": false,
+    "checkJs": false,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "moduleDetection": "legacy",
+    "types": []
+  },
+  "include": ["**/*.ts", "**/*.tsx"]
+}

@@ -1,0 +1,113 @@
+.sidebar {
+  width: 240px;
+  min-height: 100vh;
+  background: #10163a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 18px;
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 22px;
+}
+
+.sidebar-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.profile-img-wrap {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #f5b90f;
+  background: #cbd0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.profile-name {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.profile-role {
+  font-size: 11px;
+  color: #a3a8c3;
+}
+
+.sidebar-section {
+  margin-bottom: 16px;
+}
+
+.section-label {
+  font-size: 11px;
+  color: #8b90ad;
+  margin-bottom: 6px;
+  padding-left: 6px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #d3d6e8;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 2px;
+}
+
+.menu-item.active {
+  background: #f5b90f;
+  color: #101a3d;
+  font-weight: 600;
+}
+
+.menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+}
+
+.badge {
+  margin-left: auto;
+  background: #ef4d5e;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 1px 6px;
+}
+
+.logout-btn {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #ee3f4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}

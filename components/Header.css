@@ -1,0 +1,89 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 24px 0 20px;
+}
+
+.hamburger {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.candidate-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #2f4bd0;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 12px 16px;
+  border-radius: 8px 0 0 8px;
+  white-space: nowrap;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 12px 16px;
+  border-radius: 0 8px 8px 0;
+  width: 260px;
+  gap: 8px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  font-size: 13px;
+  flex: 1;
+  color: #444;
+}
+
+.search-box input::placeholder {
+  color: #a3a8c3;
+}
+
+.header-icons {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.icon-circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.icon-circle.blue {
+  background: #3355d9;
+}
+
+.icon-circle.yellow {
+  background: #f0a93a;
+}
+
+.icon-circle.green {
+  background: #34a853;
+}
+
+.icon-circle .badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: #ef4d5e;
+  color: white;
+  font-size: 9px;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 1px 5px;
+  border: 2px solid #dbe4f7;
+}

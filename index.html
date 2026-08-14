@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Leave Management</title>
+  <link rel="stylesheet" href="App.css">
+  <link rel="stylesheet" href="components/Sidebar.css">
+  <link rel="stylesheet" href="components/Header.css">
+  <link rel="stylesheet" href="components/LeaveManagement.css">
+</head>
+<body>
+
+  <div id="root"></div>
+
+  <!-- React + Babel loaded from CDN, no npm/build step needed -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script>
+    // loads each file in order, compiles it (TypeScript + JSX -> plain JS),
+    // then runs it, before moving on to the next file.
+    var files = [
+      "components/Sidebar.tsx",
+      "components/Header.tsx",
+      "data/leaveData.ts",
+      "components/LeaveManagement.tsx",
+      "App.tsx",
+      "main.tsx"
+    ];
+
+    function loadNext(index) {
+      if (index >= files.length) {
+        return;
+      }
+
+      var path = files[index];
+
+      fetch(path)
+        .then(function (res) {
+          return res.text();
+        })
+        .then(function (code) {
+          var output = Babel.transform(code, {
+            presets: [
+              "typescript",
+              ["react", { runtime: "classic" }]
+            ],
+            filename: path,
+            sourceType: "script"
+          }).code;
+
+          var script = document.createElement("script");
+          script.textContent = output;
+          document.body.appendChild(script);
+
+          loadNext(index + 1);
+        })
+        .catch(function (err) {
+          console.error("Failed to load " + path, err);
+        });
+    }
+
+    loadNext(0);
+  </script>
+
+</body>
+</html>
