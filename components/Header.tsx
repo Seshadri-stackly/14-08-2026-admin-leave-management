@@ -7,19 +7,21 @@ function Header() {
         </svg>
       </div>
 
-      <div className="candidate-dropdown">
-        <span>All Candidates</span>
-        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
-          <path d="M6 9l6 6 6-6" />
-        </svg>
-      </div>
+      <div className="header-search-group">
+        <div className="candidate-dropdown">
+          <span>All Candidates</span>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </div>
 
-      <div className="search-box">
-        <input type="text" placeholder="Search..." />
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8b90ad" strokeWidth="2">
-          <circle cx="11" cy="11" r="7" />
-          <path d="M21 21l-4.3-4.3" />
-        </svg>
+        <div className="search-box">
+          <input type="text" placeholder="Search..." />
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8b90ad" strokeWidth="2">
+            <circle cx="11" cy="11" r="7" />
+            <path d="M21 21l-4.3-4.3" />
+          </svg>
+        </div>
       </div>
 
       <div className="header-icons">
